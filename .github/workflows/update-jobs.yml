@@ -1,0 +1,46 @@
+name: Update Job Listings
+
+on:
+  schedule:
+    # 6am PST = 14:00 UTC (PST is UTC-8)
+    - cron: '0 14 * * *'
+  workflow_dispatch:  # Allow manual trigger from GitHub
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create config file
+        run: |
+          cat > config.py << 'EOF'
+          ADZUNA_APP_ID = "${{ secrets.ADZUNA_APP_ID }}"
+          ADZUNA_APP_KEY = "${{ secrets.ADZUNA_APP_KEY }}"
+          JOOBLE_API_KEY = "${{ secrets.JOOBLE_API_KEY }}"
+          SEARCH_QUERY = "phlebotomist"
+          SEARCH_LOCATION = "Oakland, California"
+          RESULTS_PER_PAGE = 50
+          SEEN_JOBS_FILE = "seen_jobs.json"
+          HTML_REPORT_FILE = "index.html"
+          EOF
+
+      - name: Run job scanner
+        run: python job_scanner.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add index.html seen_jobs.json
+          git diff --staged --quiet || git commit -m "Update job listings $(date '+%Y-%m-%d %H:%M')"
+          git push
