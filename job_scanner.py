@@ -175,6 +175,26 @@ def filter_new_jobs(jobs, seen_ids):
     return new_jobs
 
 
+def filter_recent_jobs(jobs, days=30):
+    """Filter to only jobs posted within the last N days."""
+    cutoff = datetime.now() - timedelta(days=days)
+    recent_jobs = []
+    for job in jobs:
+        created = job.get("created", "")
+        if not created:
+            recent_jobs.append(job)  # Keep jobs without dates
+            continue
+        try:
+            # Handle various date formats
+            created = created.replace("Z", "+00:00")
+            job_date = datetime.fromisoformat(created).replace(tzinfo=None)
+            if job_date >= cutoff:
+                recent_jobs.append(job)
+        except ValueError:
+            recent_jobs.append(job)  # Keep jobs with unparseable dates
+    return recent_jobs
+
+
 def format_salary(job):
     """Format salary information if available."""
     min_sal = job.get("salary_min")
@@ -394,6 +414,10 @@ def main():
         all_jobs.extend(usajobs_jobs)
 
     print(f"Total jobs from all sources: {len(all_jobs)}")
+
+    # Filter to jobs posted in the last 30 days
+    all_jobs = filter_recent_jobs(all_jobs, days=30)
+    print(f"Jobs from last 30 days: {len(all_jobs)}")
 
     # Filter to only new jobs
     new_jobs = filter_new_jobs(all_jobs, seen_ids)
