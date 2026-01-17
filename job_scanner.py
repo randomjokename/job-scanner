@@ -110,6 +110,61 @@ def fetch_jobs_jooble():
         return [], None
 
 
+def fetch_jobs_usajobs():
+    """Fetch job listings from USAJobs API (federal/government jobs)."""
+    url = "https://data.usajobs.gov/api/search"
+
+    headers = {
+        "Host": "data.usajobs.gov",
+        "User-Agent": config.USAJOBS_EMAIL,
+        "Authorization-Key": config.USAJOBS_API_KEY
+    }
+
+    params = {
+        "Keyword": config.SEARCH_QUERY,
+        "LocationName": config.SEARCH_LOCATION,
+        "ResultsPerPage": 50
+    }
+
+    try:
+        response = requests.get(url, headers=headers, params=params, timeout=30)
+        response.raise_for_status()
+        data = response.json()
+        items = data.get("SearchResult", {}).get("SearchResultItems", [])
+
+        # Normalize USAJobs format to match Adzuna structure
+        normalized = []
+        for item in items:
+            job = item.get("MatchedObjectDescriptor", {})
+            position = job.get("PositionLocation", [{}])[0] if job.get("PositionLocation") else {}
+            salary_min = None
+            salary_max = None
+            salary_range = job.get("PositionRemuneration", [{}])[0] if job.get("PositionRemuneration") else {}
+            if salary_range:
+                try:
+                    salary_min = float(salary_range.get("MinimumRange", 0))
+                    salary_max = float(salary_range.get("MaximumRange", 0))
+                except (ValueError, TypeError):
+                    pass
+
+            normalized.append({
+                "id": f"usajobs_{job.get('PositionID', '')}",
+                "title": job.get("PositionTitle", "Unknown Title"),
+                "company": {"display_name": job.get("OrganizationName", "Federal Government")},
+                "location": {"display_name": position.get("LocationName", "Oakland, CA")},
+                "description": job.get("UserArea", {}).get("Details", {}).get("JobSummary", ""),
+                "redirect_url": job.get("PositionURI", "#"),
+                "created": job.get("PublicationStartDate", ""),
+                "salary_min": salary_min,
+                "salary_max": salary_max,
+                "source": "usajobs"
+            })
+        return normalized, "usajobs"
+    except requests.RequestException as e:
+        print(f"Error fetching jobs from USAJobs: {e}")
+        return [], None
+
+
 def filter_new_jobs(jobs, seen_ids):
     """Filter out jobs that have already been seen."""
     new_jobs = []
@@ -321,19 +376,22 @@ def main():
     all_jobs, source = fetch_jobs_adzuna()
     print(f"Jobs from Adzuna: {len(all_jobs)}")
 
-    # Try Jooble as backup if Adzuna fails or returns no results
+    # Try Jooble if configured
     jooble_configured = hasattr(config, 'JOOBLE_API_KEY') and config.JOOBLE_API_KEY != "your_jooble_api_key_here"
-    if len(all_jobs) == 0 and jooble_configured:
-        print("Trying Jooble as backup...")
-        jooble_jobs, jooble_source = fetch_jobs_jooble()
-        print(f"Jobs from Jooble: {len(jooble_jobs)}")
-        all_jobs.extend(jooble_jobs)
-    elif jooble_configured:
-        # Also fetch from Jooble to get more results
-        print("Also fetching from Jooble...")
+    if jooble_configured:
+        print("Fetching from Jooble...")
         jooble_jobs, _ = fetch_jobs_jooble()
         print(f"Jobs from Jooble: {len(jooble_jobs)}")
         all_jobs.extend(jooble_jobs)
+
+    # Fetch from USAJobs if configured (federal/government jobs)
+    usajobs_configured = (hasattr(config, 'USAJOBS_API_KEY') and
+                          config.USAJOBS_API_KEY != "your_usajobs_api_key_here")
+    if usajobs_configured:
+        print("Fetching from USAJobs (federal)...")
+        usajobs_jobs, _ = fetch_jobs_usajobs()
+        print(f"Jobs from USAJobs: {len(usajobs_jobs)}")
+        all_jobs.extend(usajobs_jobs)
 
     print(f"Total jobs from all sources: {len(all_jobs)}")
 
