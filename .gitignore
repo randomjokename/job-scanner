@@ -1,0 +1,9 @@
+# Keep API keys private
+config.py
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor/tool settings
+.claude/
