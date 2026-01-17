@@ -6,7 +6,7 @@ Tracks seen jobs and generates an HTML report of new postings.
 
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from html import escape
 
 import requests
@@ -14,19 +14,35 @@ import requests
 import config
 
 
+SEEN_HOURS = 48  # Jobs reappear after this many hours
+
+
 def load_seen_jobs():
-    """Load the set of previously seen job IDs from JSON file."""
+    """Load seen job IDs from JSON, filtering out jobs older than SEEN_HOURS."""
     if os.path.exists(config.SEEN_JOBS_FILE):
         with open(config.SEEN_JOBS_FILE, "r") as f:
             data = json.load(f)
-            return set(data.get("seen_job_ids", []))
-    return set()
+            seen_jobs = data.get("seen_jobs", {})
+
+            # Filter to only jobs seen within the last SEEN_HOURS
+            cutoff = datetime.now() - timedelta(hours=SEEN_HOURS)
+            recent_seen = {}
+            for job_id, timestamp in seen_jobs.items():
+                try:
+                    seen_time = datetime.fromisoformat(timestamp)
+                    if seen_time > cutoff:
+                        recent_seen[job_id] = timestamp
+                except ValueError:
+                    continue
+
+            return recent_seen
+    return {}
 
 
-def save_seen_jobs(seen_ids, new_count):
-    """Save the updated set of seen job IDs to JSON file."""
+def save_seen_jobs(seen_jobs, new_count):
+    """Save seen job IDs with timestamps to JSON file."""
     data = {
-        "seen_job_ids": list(seen_ids),
+        "seen_jobs": seen_jobs,
         "last_checked": datetime.now().isoformat(),
         "jobs_found_last_run": new_count
     }
@@ -325,11 +341,12 @@ def main():
     new_jobs = filter_new_jobs(all_jobs, seen_ids)
     print(f"New jobs found: {len(new_jobs)}")
 
-    # Update seen jobs with all current job IDs
+    # Update seen jobs with timestamps for all current job IDs
+    now = datetime.now().isoformat()
     for job in all_jobs:
         job_id = job.get("id")
         if job_id:
-            seen_ids.add(str(job_id))
+            seen_ids[str(job_id)] = now
 
     save_seen_jobs(seen_ids, len(new_jobs))
 
