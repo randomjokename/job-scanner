@@ -645,7 +645,7 @@ def main():
     all_jobs = filter_recent_jobs(all_jobs, days=30)
     print(f"Jobs from last 30 days: {len(all_jobs)}")
 
-    # Filter to only new jobs
+    # Track which jobs are new (for console output)
     new_jobs = filter_new_jobs(all_jobs, seen_ids)
     print(f"New jobs found: {len(new_jobs)}")
 
@@ -658,8 +658,8 @@ def main():
 
     save_seen_jobs(seen_ids, len(new_jobs))
 
-    # Generate HTML report
-    report_path = generate_html_report(new_jobs)
+    # Generate HTML report with ALL recent jobs (not just new ones)
+    report_path = generate_html_report(all_jobs)
     print(f"\nHTML report saved to: {report_path}")
 
     # Print summary of new jobs to console
