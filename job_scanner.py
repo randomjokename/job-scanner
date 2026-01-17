@@ -219,118 +219,327 @@ def generate_html_report(jobs):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phlebotomist Jobs - Oakland, CA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         * {{
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }}
         body {{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
+            background-color: #f8f9fa;
             color: #333;
         }}
-        header {{
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
+        .top-bar {{
+            background: #003c71;
+            padding: 8px 0;
         }}
-        header h1 {{
-            margin: 0 0 10px 0;
+        .top-bar-content {{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            text-align: right;
         }}
-        header p {{
-            margin: 0;
+        .top-bar span {{
+            color: #fff;
+            font-size: 13px;
             opacity: 0.9;
         }}
-        .stats {{
-            background: white;
-            padding: 15px 20px;
+        header {{
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+        }}
+        .header-content {{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }}
+        .logo {{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }}
+        .logo-icon {{
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, #0077b6 0%, #00a8e8 100%);
             border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }}
+        .logo-icon svg {{
+            width: 26px;
+            height: 26px;
+            fill: #fff;
+        }}
+        .logo h1 {{
+            font-size: 22px;
+            font-weight: 500;
+            color: #003c71;
+        }}
+        .logo h1 span {{
+            color: #0077b6;
+        }}
+        .header-info {{
+            text-align: right;
+            color: #666;
+            font-size: 14px;
+        }}
+        .hero {{
+            background: linear-gradient(135deg, #0077b6 0%, #003c71 100%);
+            padding: 48px 0;
+            color: #fff;
+        }}
+        .hero-content {{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }}
+        .hero h2 {{
+            font-size: 32px;
+            font-weight: 300;
+            margin-bottom: 8px;
+        }}
+        .hero p {{
+            font-size: 16px;
+            opacity: 0.9;
+        }}
+        .stats-bar {{
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 16px 0;
+        }}
+        .stats-content {{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            gap: 32px;
+        }}
+        .stat {{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }}
+        .stat-number {{
+            font-size: 28px;
+            font-weight: 700;
+            color: #0077b6;
+        }}
+        .stat-label {{
+            font-size: 14px;
+            color: #666;
+        }}
+        main {{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }}
+        .job-list {{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }}
         .job-card {{
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 24px;
+            transition: box-shadow 0.2s, border-color 0.2s;
         }}
         .job-card:hover {{
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-color: #0077b6;
+            box-shadow: 0 4px 12px rgba(0,119,182,0.1);
+        }}
+        .job-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
         }}
         .job-title {{
-            font-size: 1.3em;
-            margin: 0 0 10px 0;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
         }}
         .job-title a {{
-            color: #667eea;
+            color: #003c71;
             text-decoration: none;
         }}
         .job-title a:hover {{
+            color: #0077b6;
             text-decoration: underline;
         }}
+        .job-date {{
+            font-size: 13px;
+            color: #666;
+            white-space: nowrap;
+        }}
         .job-company {{
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 10px;
+            font-size: 15px;
+            color: #0077b6;
+            font-weight: 500;
+            margin-bottom: 12px;
         }}
         .job-meta {{
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 15px;
-            font-size: 0.9em;
-            color: #666;
+            gap: 20px;
+            margin-bottom: 16px;
         }}
-        .job-meta span {{
+        .job-meta-item {{
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
+            font-size: 14px;
+            color: #555;
+        }}
+        .job-meta-item svg {{
+            width: 16px;
+            height: 16px;
+            fill: #666;
+        }}
+        .job-meta-item.salary {{
+            color: #2e7d32;
+            font-weight: 500;
+        }}
+        .job-meta-item.salary svg {{
+            fill: #2e7d32;
         }}
         .job-description {{
-            color: #555;
-            font-size: 0.95em;
-            border-top: 1px solid #eee;
-            padding-top: 15px;
-            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.7;
+            padding-top: 16px;
+            border-top: 1px solid #f0f0f0;
+        }}
+        .apply-btn {{
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 24px;
+            background: #0077b6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }}
+        .apply-btn:hover {{
+            background: #005f8f;
         }}
         .no-jobs {{
             text-align: center;
-            padding: 50px;
-            background: white;
-            border-radius: 10px;
+            padding: 64px 24px;
+            background: #fff;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }}
+        .no-jobs h3 {{
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 8px;
+        }}
+        .no-jobs p {{
             color: #666;
         }}
-        .salary {{
-            color: #2e7d32;
-            font-weight: 500;
+        footer {{
+            background: #003c71;
+            color: #fff;
+            padding: 32px 0;
+            margin-top: 48px;
+        }}
+        .footer-content {{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.8;
+        }}
+        @media (max-width: 640px) {{
+            .header-content {{
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }}
+            .header-info {{
+                text-align: center;
+            }}
+            .hero h2 {{
+                font-size: 24px;
+            }}
+            .stats-content {{
+                flex-direction: column;
+                gap: 16px;
+            }}
+            .job-header {{
+                flex-direction: column;
+                gap: 8px;
+            }}
         }}
     </style>
 </head>
 <body>
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span>Oakland, CA Area Healthcare Careers</span>
+        </div>
+    </div>
+
     <header>
-        <h1>Phlebotomist Jobs</h1>
-        <p>Oakland, CA Area - Updated {timestamp}</p>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+                </div>
+                <h1>Phlebotomy<span>Careers</span></h1>
+            </div>
+            <div class="header-info">
+                Updated {timestamp}
+            </div>
+        </div>
     </header>
 
-    <div class="stats">
-        <strong>{len(jobs)}</strong> new job{'' if len(jobs) == 1 else 's'} found
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Phlebotomist Positions</h2>
+            <p>Find your next opportunity in healthcare</p>
+        </div>
     </div>
+
+    <div class="stats-bar">
+        <div class="stats-content">
+            <div class="stat">
+                <span class="stat-number">{len(jobs)}</span>
+                <span class="stat-label">Available<br>Positions</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">30</span>
+                <span class="stat-label">Day<br>Listings</span>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="job-list">
 """
 
     if not jobs:
         html += """
-    <div class="no-jobs">
-        <h2>No New Jobs Found</h2>
-        <p>Check back later for new postings!</p>
-    </div>
+            <div class="no-jobs">
+                <h3>No Positions Available</h3>
+                <p>Check back soon for new opportunities in your area.</p>
+            </div>
 """
     else:
         for job in jobs:
@@ -353,19 +562,36 @@ def generate_html_report(jobs):
                 posted = "Recently"
 
             html += f"""
-    <div class="job-card">
-        <h2 class="job-title"><a href="{url}" target="_blank">{title}</a></h2>
-        <div class="job-company">{company}</div>
-        <div class="job-meta">
-            <span>📍 {location}</span>
-            <span class="salary">💰 {salary}</span>
-            <span>📅 Posted: {posted}</span>
-        </div>
-        <div class="job-description">{description}</div>
-    </div>
+            <div class="job-card">
+                <div class="job-header">
+                    <h3 class="job-title"><a href="{url}" target="_blank">{title}</a></h3>
+                    <span class="job-date">{posted}</span>
+                </div>
+                <div class="job-company">{company}</div>
+                <div class="job-meta">
+                    <span class="job-meta-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        {location}
+                    </span>
+                    <span class="job-meta-item salary">
+                        <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                        {salary}
+                    </span>
+                </div>
+                <div class="job-description">{description}</div>
+                <a href="{url}" target="_blank" class="apply-btn">View Position</a>
+            </div>
 """
 
     html += """
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            Job listings refreshed daily. Data sourced from multiple job boards.
+        </div>
+    </footer>
 </body>
 </html>
 """
