@@ -14,35 +14,48 @@ import requests
 import config
 
 
-SEEN_HOURS = 48  # Jobs reappear after this many hours
+CACHE_DAYS = 30  # Keep job data for this many days
 
 
-def load_seen_jobs():
-    """Load seen job IDs from JSON, filtering out jobs older than SEEN_HOURS."""
+def load_cached_jobs():
+    """Load cached job data from JSON, filtering out jobs older than CACHE_DAYS."""
     if os.path.exists(config.SEEN_JOBS_FILE):
         with open(config.SEEN_JOBS_FILE, "r") as f:
             data = json.load(f)
-            seen_jobs = data.get("seen_jobs", {})
+            # Support new format (cached_jobs with full data) or start fresh
+            # Old format (seen_jobs with just timestamps) is ignored - we'll rebuild
+            cached_jobs = data.get("cached_jobs", {})
 
-            # Filter to only jobs seen within the last SEEN_HOURS
-            cutoff = datetime.now() - timedelta(hours=SEEN_HOURS)
-            recent_seen = {}
-            for job_id, timestamp in seen_jobs.items():
+            # Filter to only jobs from the last CACHE_DAYS
+            cutoff = datetime.now() - timedelta(days=CACHE_DAYS)
+            recent_jobs = {}
+            for job_id, job_data in cached_jobs.items():
                 try:
-                    seen_time = datetime.fromisoformat(timestamp)
-                    if seen_time > cutoff:
-                        recent_seen[job_id] = timestamp
-                except ValueError:
-                    continue
+                    # Check the job's created date or when we first saw it
+                    created = job_data.get("created", "")
+                    if created:
+                        created = created.replace("Z", "+00:00")
+                        job_date = datetime.fromisoformat(created).replace(tzinfo=None)
+                    else:
+                        # Fall back to when we first cached it
+                        first_seen = job_data.get("_first_seen", "")
+                        if first_seen:
+                            job_date = datetime.fromisoformat(first_seen)
+                        else:
+                            job_date = datetime.now()  # Keep if no date info
 
-            return recent_seen
+                    if job_date >= cutoff:
+                        recent_jobs[job_id] = job_data
+                except ValueError:
+                    recent_jobs[job_id] = job_data  # Keep on parse error
+            return recent_jobs
     return {}
 
 
-def save_seen_jobs(seen_jobs, new_count):
-    """Save seen job IDs with timestamps to JSON file."""
+def save_cached_jobs(cached_jobs, new_count):
+    """Save cached job data to JSON file."""
     data = {
-        "seen_jobs": seen_jobs,
+        "cached_jobs": cached_jobs,
         "last_checked": datetime.now().isoformat(),
         "jobs_found_last_run": new_count
     }
@@ -163,16 +176,6 @@ def fetch_jobs_usajobs():
     except requests.RequestException as e:
         print(f"Error fetching jobs from USAJobs: {e}")
         return [], None
-
-
-def filter_new_jobs(jobs, seen_ids):
-    """Filter out jobs that have already been seen."""
-    new_jobs = []
-    for job in jobs:
-        job_id = job.get("id")
-        if job_id and str(job_id) not in seen_ids:
-            new_jobs.append(job)
-    return new_jobs
 
 
 def filter_recent_jobs(jobs, days=30):
@@ -613,14 +616,14 @@ def main():
         print("Sign up for free at: https://developer.adzuna.com/")
         return
 
-    # Load previously seen jobs
-    seen_ids = load_seen_jobs()
-    print(f"Previously seen jobs: {len(seen_ids)}")
+    # Load previously cached jobs (full job data, not just IDs)
+    cached_jobs = load_cached_jobs()
+    print(f"Previously cached jobs: {len(cached_jobs)}")
 
     # Fetch current jobs from APIs
     print("Fetching jobs from Adzuna...")
-    all_jobs, source = fetch_jobs_adzuna()
-    print(f"Jobs from Adzuna: {len(all_jobs)}")
+    api_jobs, source = fetch_jobs_adzuna()
+    print(f"Jobs from Adzuna: {len(api_jobs)}")
 
     # Try Jooble if configured
     jooble_configured = hasattr(config, 'JOOBLE_API_KEY') and config.JOOBLE_API_KEY != "your_jooble_api_key_here"
@@ -628,7 +631,7 @@ def main():
         print("Fetching from Jooble...")
         jooble_jobs, _ = fetch_jobs_jooble()
         print(f"Jobs from Jooble: {len(jooble_jobs)}")
-        all_jobs.extend(jooble_jobs)
+        api_jobs.extend(jooble_jobs)
 
     # Fetch from USAJobs if configured (federal/government jobs)
     usajobs_configured = (hasattr(config, 'USAJOBS_API_KEY') and
@@ -637,40 +640,62 @@ def main():
         print("Fetching from USAJobs (federal)...")
         usajobs_jobs, _ = fetch_jobs_usajobs()
         print(f"Jobs from USAJobs: {len(usajobs_jobs)}")
-        all_jobs.extend(usajobs_jobs)
+        api_jobs.extend(usajobs_jobs)
 
-    print(f"Total jobs from all sources: {len(all_jobs)}")
-
-    # Filter to jobs posted in the last 30 days
-    all_jobs = filter_recent_jobs(all_jobs, days=30)
-    print(f"Jobs from last 30 days: {len(all_jobs)}")
+    print(f"Total jobs from APIs: {len(api_jobs)}")
 
     # Track which jobs are new (for console output)
-    new_jobs = filter_new_jobs(all_jobs, seen_ids)
-    print(f"New jobs found: {len(new_jobs)}")
-
-    # Update seen jobs with timestamps for all current job IDs
+    new_job_count = 0
     now = datetime.now().isoformat()
-    for job in all_jobs:
+
+    # Merge API jobs into cache (new jobs get added, existing jobs get updated)
+    for job in api_jobs:
         job_id = job.get("id")
         if job_id:
-            seen_ids[str(job_id)] = now
+            job_id_str = str(job_id)
+            if job_id_str not in cached_jobs:
+                new_job_count += 1
+                job["_first_seen"] = now  # Track when we first saw this job
+            cached_jobs[job_id_str] = job
 
-    save_seen_jobs(seen_ids, len(new_jobs))
+    print(f"New jobs found: {new_job_count}")
 
-    # Generate HTML report with ALL recent jobs (not just new ones)
+    # Save the updated cache
+    save_cached_jobs(cached_jobs, new_job_count)
+
+    # Convert cache dict back to list for display, filter to last 30 days
+    all_jobs = list(cached_jobs.values())
+    all_jobs = filter_recent_jobs(all_jobs, days=30)
+    print(f"Total jobs to display (last 30 days): {len(all_jobs)}")
+
+    # Sort by date (newest first)
+    def get_job_date(job):
+        created = job.get("created", "")
+        if not created:
+            return datetime.min
+        try:
+            created = created.replace("Z", "+00:00")
+            return datetime.fromisoformat(created).replace(tzinfo=None)
+        except ValueError:
+            return datetime.min
+
+    all_jobs.sort(key=get_job_date, reverse=True)
+
+    # Generate HTML report with ALL cached jobs from last 30 days
     report_path = generate_html_report(all_jobs)
     print(f"\nHTML report saved to: {report_path}")
 
     # Print summary of new jobs to console
-    if new_jobs:
+    if new_job_count > 0:
         print(f"\n{'='*50}")
-        print("NEW JOB POSTINGS:")
+        print(f"NEW JOB POSTINGS: {new_job_count}")
         print('='*50)
-        for job in new_jobs:
-            print(f"\n• {job.get('title', 'Unknown')}")
-            print(f"  Company: {job.get('company', {}).get('display_name', 'Unknown')}")
-            print(f"  Location: {job.get('location', {}).get('display_name', 'N/A')}")
+        for job in api_jobs:
+            job_id = str(job.get("id", ""))
+            if job.get("_first_seen") == now:
+                print(f"\n• {job.get('title', 'Unknown')}")
+                print(f"  Company: {job.get('company', {}).get('display_name', 'Unknown')}")
+                print(f"  Location: {job.get('location', {}).get('display_name', 'N/A')}")
     else:
         print("\nNo new jobs since last check.")
 

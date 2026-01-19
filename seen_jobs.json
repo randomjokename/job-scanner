@@ -1,23 +1,1013 @@
 {
-  "seen_jobs": {
-    "5587889527": "2026-01-16T19:10:33.215481",
-    "5587874552": "2026-01-16T19:10:33.215481",
-    "5584967677": "2026-01-16T19:10:33.215481",
-    "5583840641": "2026-01-16T19:10:33.215481",
-    "5583031259": "2026-01-16T19:10:33.215481",
-    "5582924568": "2026-01-16T19:10:33.215481",
-    "5582362054": "2026-01-16T19:10:33.215481",
-    "5582084909": "2026-01-16T19:10:33.215481",
-    "5579757045": "2026-01-16T19:10:33.215481",
-    "5579379267": "2026-01-16T19:10:33.215481",
-    "5578548354": "2026-01-16T19:10:33.215481",
-    "5569405940": "2026-01-16T19:10:33.215481",
-    "5568274172": "2026-01-16T19:10:33.215481",
-    "5555971513": "2026-01-16T19:10:33.215481",
-    "5554863713": "2026-01-16T19:10:33.215481",
-    "5554863071": "2026-01-16T19:10:33.215481",
-    "5549181211": "2026-01-16T19:10:33.215481"
+  "cached_jobs": {
+    "5590095696": {
+      "title": "Perm - Technologist - Laboratory (Evenings) San Leandro, CA",
+      "latitude": 37.720538,
+      "salary_max": 57798.98,
+      "salary_is_predicted": "1",
+      "company": {
+        "display_name": "Geaux Care Staffing",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU5MDA5NTY5NiIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.oV9JQipjvvGH25WwePqTF4tmJ2fNwLtT7O3PZjsgSgM",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Scientific & QA Jobs",
+        "tag": "scientific-qa-jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_min": 57798.98,
+      "description": "Source=AHSA;SourceID=64590;Status=Open;Association=Pacific Region;Client=TridentCare - California;City=San Leandro;State=CA;Zip=94577;Start=1/16/2026;End=10/12/2028;Duration=1000;Cert=Technologist;Specialty=Laboratory;Unit=Mobile Laboratory - San Leandro;Shift=2:00 PM-10:30 PM Monday-Friday 2pm - 10:30pm - available; of Postions=1;Type=Permanent;BillRate=29.89;minBillRate=24.18;DescriptionWILL HAVE TO DRIVE TO10948 Bigge St San Leandro CA 94577 TO PICK UP AND RETURN VAN EVERY SHIFT Serves over \u2026",
+      "id": "5590095696",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Leandro"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "San Leandro, Alameda County"
+      },
+      "redirect_url": "https://www.adzuna.com/details/5590095696?utm_medium=api&utm_source=4364e825",
+      "longitude": -122.156804,
+      "created": "2026-01-17T22:01:32Z",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5585650382": {
+      "category": {
+        "tag": "healthcare-nursing-jobs",
+        "label": "Healthcare & Nursing Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_min": 38323.69,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4NTY1MDM4MiIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.9bHyrElsCGurRCxbrO0QdDQOmeFoRRbbJ_d-1EJ-t5w",
+      "redirect_url": "https://www.adzuna.com/details/5585650382?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "San Leandro, Alameda County",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Leandro"
+        ]
+      },
+      "longitude": -122.168928,
+      "created": "2026-01-14T23:36:04Z",
+      "description": "Job Description Job Description Pay based on experience, starting at $23.00 per hour. TASKS AND RESPONSIBILITIES: o Employee will drive their personal vehicle (unless other accommodations are made) to client facilities (mostly nursing homes) as directed by company dispatcher or assigned Area Phlebotomy Supervisor/ Area Lead. o Follows established phlebotomy procedures for obtaining blood samples from patients. o Properly and accurately identify patients according to phlebotomy patient identific\u2026",
+      "id": "5585650382",
+      "title": "Lead Mobile Phlebotomist",
+      "latitude": 37.719925,
+      "company": {
+        "display_name": "TridentCare",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "salary_max": 38323.69,
+      "salary_is_predicted": "1",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5584967677": {
+      "title": "Phlebotomist",
+      "latitude": 37.688724,
+      "company": {
+        "display_name": "Labcorp",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "salary_is_predicted": "1",
+      "salary_max": 67876.97,
+      "salary_min": 67876.97,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "label": "Customer Services Jobs",
+        "tag": "customer-services-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4NDk2NzY3NyIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.zx6sSS5PtEs6nsIx5O3olCe9kvsOQEt-iko9_6B_N2I",
+      "created": "2026-01-14T15:36:59Z",
+      "longitude": -122.150578,
+      "redirect_url": "https://www.adzuna.com/land/ad/5584967677?se=tOPYVs708BGwtq8v1iis8w&utm_medium=api&utm_source=4364e825&v=889FFCB664C5AD84D2C861209F4BF078F045B344",
+      "location": {
+        "display_name": "San Lorenzo, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Lorenzo"
+        ]
+      },
+      "id": "5584967677",
+      "description": "At LabCorp we have a passion in helping people live happy and healthy lives. Every day we provide vital information that helps our clients and patients understand their health. If you are passionate about helping people and have a drive for service, then LabCorp could be a great next career step We are currently seeking a phlebotomist to work in either a Patient Service Center or Client office. In this role you will provide exceptional customer service, perform skilled specimen collections and \u2026",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5584904102": {
+      "latitude": 37.719925,
+      "title": "Medical Laboratory Technician (MLT)",
+      "salary_max": 60320,
+      "salary_is_predicted": "0",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Lancesoft INC"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTg0OTA0MTAyIn0.6mJZCNYh8A9tQMMdqEQauD3_5q75dqVA0LNefDRKrjo",
+      "salary_min": 49920,
+      "category": {
+        "tag": "engineering-jobs",
+        "label": "Engineering Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "id": "5584904102",
+      "description": "Job Description Job Description Point of Care Lab Technician Full Time Permanent Hourly Range: $24.18 - $29.89 Per Hour plus benefits Shift Notes: Monday-Friday 2pm - 10:30pm - available WILL HAVE TO DRIVE TO 10948 Bigge St San Leandro CA 94577 TO PICK UP AND RETURN VAN EVERY SHIFT Point of Care Lab Technician Under supervision of Laboratory Manager, performs waived laboratory tests in a remote or mobile setting. Also responsible for monitoring quality of reagents and working condition of instr\u2026",
+      "longitude": -122.168928,
+      "created": "2026-01-14T14:57:01Z",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Leandro"
+        ],
+        "display_name": "San Leandro, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.com/details/5584904102?utm_medium=api&utm_source=4364e825",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5583492870": {
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4MzQ5Mjg3MCIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.oQ3LSuYOzodv3LysMI0YLBXxwV6f4ikiGtjdWJ-Ikic",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "tag": "scientific-qa-jobs",
+        "label": "Scientific & QA Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_min": 65038.71,
+      "id": "5583492870",
+      "redirect_url": "https://www.adzuna.com/details/5583492870?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "San Leandro, Alameda County",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Leandro"
+        ]
+      },
+      "title": "Laboratory (Varied) Technologist",
+      "salary_is_predicted": "1",
+      "salary_max": 65038.71,
+      "description": "Position Title: Point of Care Lab Technician Shift Evenings- 2 PM - 10.30 PM Under the supervision of the Laboratory Manager, the Point of Care Lab Technician conducts waived laboratory tests in a remote or mobile environment. This role also entails the responsibility of monitoring the quality of reagents and ensuring the optimal functioning of instruments. Essential Functions: - Receives specimens from phlebotomists and couriers. - May operate a delivery van to transport the mobile laboratory \u2026",
+      "longitude": -122.168928,
+      "created": "2026-01-13T22:54:10Z",
+      "contract_time": "full_time",
+      "latitude": 37.719925,
+      "company": {
+        "display_name": "Rinvio Recruitment",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5583031259": {
+      "salary_min": 79342.45,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "scientific-qa-jobs",
+        "label": "Scientific & QA Jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4MzAzMTI1OSIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.m5WtT6NcZ_z_9jLV-eMickOy3h7odATi8xC-7mNaeZ8",
+      "longitude": -122.156804,
+      "created": "2026-01-13T16:23:00Z",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Leandro"
+        ],
+        "display_name": "San Leandro, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.com/details/5583031259?utm_medium=api&utm_source=4364e825",
+      "id": "5583031259",
+      "description": "WILL HAVE TO DRIVE TO 10948 Bigge St San Leandro CA 94577 TO PICK UP AND RETURN VAN EVERY SHIFT Serves over 7,500 care facilities nationwide. Great company to work for. Great working environment and developmental training! Feel accomplished at the end of the day. Great opportunities to promote yourself within and fine tune your skills. Great benefits, coworkers are very helpful. Autonomy, variety of patients, always on the move, great benefits, job security, and a great team to work with that s\u2026",
+      "title": "Perm - Technologist - Laboratory (Evenings) San Leandro CA",
+      "latitude": 37.720538,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Bestica"
+      },
+      "salary_max": 79342.45,
+      "salary_is_predicted": "1",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5582924568": {
+      "company": {
+        "display_name": "Lancesoft INC",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "salary_is_predicted": "0",
+      "salary_max": 60320,
+      "latitude": 37.719925,
+      "title": "Laboratory Technologist",
+      "redirect_url": "https://www.adzuna.com/details/5582924568?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "San Leandro, Alameda County",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Leandro"
+        ]
+      },
+      "created": "2026-01-13T14:49:30Z",
+      "longitude": -122.168928,
+      "description": "Job Description Job Description Point of Care Lab Technician : Under supervision of Laboratory Manager, performs waived laboratory tests in a remote or mobile setting. Also responsible for monitoring quality of reagents and working condition of instruments. Essential Functions: Receives specimens from phlebotomists and couriers. May operate a delivery van to bring the mobile lab to an area of high volume of STAT testing when applicable. Enters patient demographics and test orders into lab infor\u2026",
+      "id": "5582924568",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Engineering Jobs",
+        "tag": "engineering-jobs"
+      },
+      "salary_min": 49920,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTgyOTI0NTY4In0.2oibfLBxJDYXxsGsptFiYoY87RLTq0YUdx-7MBwledY",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5582084909": {
+      "salary_max": 62171,
+      "salary_is_predicted": "0",
+      "contract_type": "permanent",
+      "title": "Travel Medical Laboratory Technician (MLT) - $24 to $30 per hour in San Leandro, CA",
+      "id": "5582084909",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Leandro"
+        ],
+        "display_name": "San Leandro, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.com/details/5582084909?utm_medium=api&utm_source=4364e825",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTgyMDg0OTA5In0.PE0YVlEgzxmz7Tu9wfc4ydoR4iODQ_O4jLzGgw7lB5w",
+      "category": {
+        "label": "Healthcare & Nursing Jobs",
+        "tag": "healthcare-nursing-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_min": 50294,
+      "company": {
+        "display_name": "Acruex Health",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "contract_time": "full_time",
+      "latitude": 37.720538,
+      "description": "Medical Laboratory Technician Location: San Leandro, CA Agency: Acruex Health Pay: $24 to $30 per hour Shift Information: Evenings - 5 days x 8 hours Start Date: ASAP About the Position  Permanent (Full Time)  Pay Rate: $24.18 - $29.89/Hourly. Summary: Under supervision of Laboratory Manager, performs waived laboratory tests in a remote or mobile setting. Also responsible for monitoring quality of reagents and working condition of instruments. Responsibilities: Receives specimens from phlebotom\u2026",
+      "longitude": -122.156804,
+      "created": "2026-01-13T05:35:48Z",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5579757045": {
+      "company": {
+        "display_name": "Quest Diagnostics",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "contract_time": "full_time",
+      "latitude": 37.763607,
+      "longitude": -122.258202,
+      "created": "2026-01-11T15:29:15Z",
+      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist I - Alameda, CA, Monday to Friday, 7:30 AM to 4:30 PM, with rotational weekends Pay range: $23.55 - $28.05 / hour Salary offers are based on a wide range of factors including relevant skills, training, experience, education, and, where applicable, certifications obtained. Market and organizational factors are also considered. Successful candidates may be el\u2026",
+      "salary_max": 58344,
+      "salary_is_predicted": "0",
+      "title": "Phlebotomist I",
+      "redirect_url": "https://www.adzuna.com/details/5579757045?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Alameda Pt, Alameda County",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Alameda Pt"
+        ]
+      },
+      "id": "5579757045",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "customer-services-jobs",
+        "label": "Customer Services Jobs"
+      },
+      "salary_min": 48984,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTc5NzU3MDQ1In0.dwgr5D9kpEV4YAbCfxwJCXj0YDY-kfvN8i52Bl7hU2A",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5579379267": {
+      "company": {
+        "display_name": "Quest Diagnostics",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "contract_time": "part_time",
+      "latitude": 37.778403,
+      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist I - Oakland, CA, Monday to Friday, 8:00 AM to 1:00 PM, with rotational weekends Pay range: $23.55 - $28.05 / hour Salary offers are based on a wide range of factors including relevant skills, training, experience, education, and, where applicable, certifications obtained. Market and organizational factors are also considered. Successful candidates may be el\u2026",
+      "created": "2026-01-11T10:24:13Z",
+      "longitude": -122.216989,
+      "salary_max": 58344,
+      "salary_is_predicted": "0",
+      "title": "Phlebotomist I",
+      "id": "5579379267",
+      "redirect_url": "https://www.adzuna.com/details/5579379267?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Oakland"
+        ],
+        "display_name": "Oakland, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTc5Mzc5MjY3In0.ISEhFxT6kPZlRZtmgBoFXdaDF_UWk1Aa4SHf6AIepLA",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "customer-services-jobs",
+        "label": "Customer Services Jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_min": 48984,
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5578548354": {
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Labcorp"
+      },
+      "salary_is_predicted": "1",
+      "salary_max": 46896.36,
+      "latitude": 37.793068,
+      "title": "Wellness Worker - Biometric Screener -CA, OR, WA, NV",
+      "created": "2026-01-10T15:51:04Z",
+      "longitude": -122.242902,
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Alameda Pt"
+        ],
+        "display_name": "Alameda Pt, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.com/land/ad/5578548354?se=tOPYVs708BGwtq8v1iis8w&utm_medium=api&utm_source=4364e825&v=B07F45DC963891EA12F689D712731D38D5953EEF",
+      "id": "5578548354",
+      "description": "About: Labcorp is a leading provider of biometric testing services, population health and comprehensive workforce wellness strategies. These services are performed by a network of Labcorp personnel located throughout the country. Summary: Labcorp is seeking medical professionals to provide testing services at events. Once hired, our staff have the ability to assign themselves to events in their area by utilizing our scheduling system. In addition, we provide pre-event comprehensive training on \u2026",
+      "salary_min": 46896.36,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "healthcare-nursing-jobs",
+        "label": "Healthcare & Nursing Jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTc4NTQ4MzU0In0.pDI3N_9rXbLoLsi2HkWHHl5wN0N-kvH1golNuffDy68",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5569405940": {
+      "description": "Job Description Job Description Pay Range: $24.18-$29.89 FT/PT: Full Time Shifts Available: 5:00am-1:30pm and 2:00pm-10:30pm Licensure Requirement: Must possess an active MLT or LVN license. Job summary Under supervision of Laboratory Manager, performs waived laboratory tests in a remote or mobile setting. Also responsible for monitoring quality of reagents and working condition of instruments. Essential Functions: \u2022 Receives specimens from phlebotomists and couriers. \u2022 May operate a delivery v\u2026",
+      "id": "5569405940",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Leandro"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "San Leandro, Alameda County"
+      },
+      "redirect_url": "https://www.adzuna.com/details/5569405940?utm_medium=api&utm_source=4364e825",
+      "created": "2026-01-05T22:24:02Z",
+      "longitude": -122.168928,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTY5NDA1OTQwIn0.sPT_VkzKU4Qe5DaGQwKEa1weOAJKzaV8KUo8js1nXUQ",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Scientific & QA Jobs",
+        "tag": "scientific-qa-jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_min": 47686.46,
+      "salary_max": 47686.46,
+      "salary_is_predicted": "1",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "TridentCare"
+      },
+      "latitude": 37.719925,
+      "title": "Point of Care Lab Technician",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5555971513": {
+      "contract_time": "full_time",
+      "latitude": 37.806984,
+      "company": {
+        "display_name": "Quest Diagnostics",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist II Float - Oakland, CA, Float hours vary from Monday to Friday, 6:30 AM to 5:30 PM, with rotational Saturday, 7:30 AM to 1:00 PM In a Phlebotomy float role we offer a variety in work where no two days will quite look the same. Diverse, dynamic work environment where as a Phlebotomist floater you will be able to shift frequently to new patient centers and co\u2026",
+      "longitude": -122.286229,
+      "created": "2025-12-25T16:24:10Z",
+      "title": "Phlebotomist II Float",
+      "salary_max": 63772,
+      "salary_is_predicted": "0",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTU1OTcxNTEzIn0.sos9wLO5abA0tuyaiwdzW1lCaAHYGUHfSWO0-eGtJUo",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Healthcare & Nursing Jobs",
+        "tag": "healthcare-nursing-jobs"
+      },
+      "salary_min": 54808,
+      "id": "5555971513",
+      "redirect_url": "https://www.adzuna.com/details/5555971513?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "display_name": "Philatelic, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Philatelic"
+        ]
+      },
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5554863713": {
+      "salary_min": 54808,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "healthcare-nursing-jobs",
+        "label": "Healthcare & Nursing Jobs"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTU0ODYzNzEzIn0.TOmuiq88k669Cxrzp4RL5gqTd5G_3hNht5CfPhjYAq8",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Berkeley"
+        ],
+        "display_name": "Berkeley, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.com/details/5554863713?utm_medium=api&utm_source=4364e825",
+      "id": "5554863713",
+      "title": "Phlebotomist II Float",
+      "salary_max": 63772,
+      "salary_is_predicted": "0",
+      "longitude": -122.244855,
+      "created": "2025-12-24T16:05:38Z",
+      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist II Float - Berkeley, CA, Monday to Friday, 8:00 AM to 5:00 PM, with rotational weekends In a Phlebotomy float role we offer a variety in work where no two days will quite look the same. Diverse, dynamic work environment where as a Phlebotomist floater you will be able to shift frequently to new patient centers and continually meet new people. We offer a rob\u2026",
+      "latitude": 37.85737,
+      "contract_time": "full_time",
+      "company": {
+        "display_name": "Quest Diagnostics",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5554863071": {
+      "contract_time": "full_time",
+      "latitude": 37.701202,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Quest Diagnostics"
+      },
+      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist II Float - Castro Valley, CA, Monday to Friday, 8:00 AM to 5:00 PM, with rotational weekends In a Phlebotomy float role we offer a variety in work where no two days will quite look the same. Diverse, dynamic work environment where as a Phlebotomist floater you will be able to shift frequently to new patient centers and continually meet new people. We offer \u2026",
+      "longitude": -122.079599,
+      "created": "2025-12-24T16:00:38Z",
+      "title": "Phlebotomist II Float",
+      "salary_max": 63752,
+      "salary_is_predicted": "0",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTU0ODYzMDcxIn0.H_EY_f90XyT1EYty7L-fQ4OkfAYAEeP9BAY0GTQyjRk",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "label": "Healthcare & Nursing Jobs",
+        "tag": "healthcare-nursing-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_min": 53456,
+      "id": "5554863071",
+      "location": {
+        "display_name": "Hayward, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Hayward"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.com/details/5554863071?utm_medium=api&utm_source=4364e825",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5541570953": {
+      "title": "Mobile Phlebotomist",
+      "salary_max": 52000,
+      "salary_is_predicted": "0",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU0MTU3MDk1MyIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0._VHqHDcSbq4uFKKsok8waT2g-op33v4CwxcFLUJN03w",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "tag": "healthcare-nursing-jobs",
+        "label": "Healthcare & Nursing Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_min": 47840,
+      "id": "5541570953",
+      "redirect_url": "https://www.adzuna.com/details/5541570953?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Hayward"
+        ],
+        "display_name": "Hayward, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "contract_time": "full_time",
+      "latitude": 37.674815,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "TridentCare"
+      },
+      "description": "Pay Range: $23-$25 TASKS AND RESPONSIBILITIES: o Employee will drive their personal vehicle (unless other accommodations are made) to client facilities (mostly nursing homes) as directed by company dispatcher or assigned Area Phlebotomy Supervisor/ Area Lead. o Follows established phlebotomy procedures for obtaining blood samples from patients. o Properly and accurately identify patients according to phlebotomy patient identification policy prior to drawing. o Ensures that specimens are properl\u2026",
+      "longitude": -122.081533,
+      "created": "2025-12-13T16:10:46Z",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5530160521": {
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUzMDE2MDUyMSIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.lVB0c1Mw7E2guCrY7vPpHGIEUFOsvCfYHPtYe59DGBU",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "tag": "healthcare-nursing-jobs",
+        "label": "Healthcare & Nursing Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_min": 54808,
+      "id": "5530160521",
+      "redirect_url": "https://www.adzuna.com/details/5530160521?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Philatelic, Alameda County",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Philatelic"
+        ]
+      },
+      "title": "Phlebotomist II Float",
+      "salary_is_predicted": "0",
+      "salary_max": 63772,
+      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist II Float - Oakland, CA, Monday to Friday, hours vary between 6:30 AM to 6:30 PM, with rotational weekends In a Phlebotomy float role we offer a variety in work where no two days will quite look the same. Diverse, dynamic work environment where as a Phlebotomist floater you will be able to shift frequently to new patient centers and continually meet new peop\u2026",
+      "created": "2025-12-05T17:51:20Z",
+      "longitude": -122.286229,
+      "contract_time": "full_time",
+      "latitude": 37.806984,
+      "company": {
+        "display_name": "Quest Diagnostics",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5526869278": {
+      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist II Float - San Leandro, CA, Monday to Friday, 6:30 AM to 6:00 PM, with rotational weekends In a Phlebotomy float role we offer a variety in work where no two days will quite look the same. Diverse, dynamic work environment where as a Phlebotomist floater you will be able to shift frequently to new patient centers and continually meet new people. We offer a \u2026",
+      "created": "2025-12-03T19:53:26Z",
+      "longitude": -122.286229,
+      "latitude": 37.806984,
+      "contract_time": "full_time",
+      "company": {
+        "display_name": "Quest Diagnostics",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTI2ODY5Mjc4In0.U1U2XlMJjDL0XN7ZDRrhoxMt31PwnRS8B3So2ngKncw",
+      "salary_min": 54808,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "healthcare-nursing-jobs",
+        "label": "Healthcare & Nursing Jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "id": "5526869278",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Philatelic"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Philatelic, Alameda County"
+      },
+      "redirect_url": "https://www.adzuna.com/details/5526869278?utm_medium=api&utm_source=4364e825",
+      "title": "Phlebotomist II Float",
+      "salary_is_predicted": "0",
+      "salary_max": 63772,
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5484011629": {
+      "company": {
+        "display_name": "DIVERSE LYNX LLC",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "contract_time": "full_time",
+      "latitude": 37.867417,
+      "created": "2025-11-06T10:24:49Z",
+      "longitude": -122.259661,
+      "description": "Hiring Position: Phlebotomist Shift: Day 8 hours Facility: Sutter Health Location: Berkeley, CA Pay range: $24/hr for Local and $30/hr on Traveller Requirements: Need lab assistant to help with processing specimens, answering phone calls, and sending specimens out. Also, this person will help with doing neonatal draws. Certification requirements: CALIFORNIA STATE CPTI-Certified Phlebotomy Technician I BLS .JOB ACCOUNTABILITIES: Receives and prepares for testing, various types of body fluids and\u2026",
+      "salary_is_predicted": "0",
+      "salary_max": 62400,
+      "title": "Phlebotomist",
+      "redirect_url": "https://www.adzuna.com/details/5484011629?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Berkeley"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Berkeley, Alameda County"
+      },
+      "id": "5484011629",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "healthcare-nursing-jobs",
+        "label": "Healthcare & Nursing Jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_min": 49920,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NDg0MDExNjI5In0.CIksBu87e4lxrmjkQatvzhBLcv-XD59FyfX3xSpcnLk",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5483834576": {
+      "company": {
+        "display_name": "Getlabs",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "contract_time": "full_time",
+      "latitude": 37.772927,
+      "longitude": -122.214332,
+      "created": "2025-11-06T07:48:25Z",
+      "description": "Getlabs is the leading platform for at-home diagnostics. Healthcare organizations use Getlabs to send mobile phlebotomists to patients\u2019 homes and collect labs, vitals, and advanced diagnostics. By leveraging Getlabs, partners can improve patient adherence and close gaps in care with same-day, nationwide availability. Our team has raised $50M from strategic investors including the two largest diagnostic laboratories in the United States, Labcorp and Quest. Getlabs\u2019 mission is to save lives by ex\u2026",
+      "salary_max": 65712.87,
+      "salary_is_predicted": "1",
+      "title": "Mobile Phlebotomist",
+      "redirect_url": "https://www.adzuna.com/details/5483834576?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "display_name": "Oakland, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Oakland"
+        ]
+      },
+      "id": "5483834576",
+      "category": {
+        "label": "Healthcare & Nursing Jobs",
+        "tag": "healthcare-nursing-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_min": 65712.87,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQ4MzgzNDU3NiIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.GgTccXU90PgRTUXY0Y3ArndowElSndDWAvmUXfPdhRE",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5455468634": {
+      "id": "5455468634",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Philatelic"
+        ],
+        "display_name": "Philatelic, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.com/details/5455468634?utm_medium=api&utm_source=4364e825",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQ1NTQ2ODYzNCIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.iOHwFAM5czXt-EMxOBHtz97sr8joVcSf2xCZgee-Ubw",
+      "salary_min": 48984,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "customer-services-jobs",
+        "label": "Customer Services Jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_is_predicted": "0",
+      "salary_max": 58344,
+      "title": "Phlebotomist I",
+      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist I - Oakland, CA, Monday to Friday, 8:00 AM to 5:00 PM, with rotational weekends Pay range: $23.55 - $28.05 / hour Salary offers are based on a wide range of factors including relevant skills, training, experience, education, and, where applicable, certifications obtained. Market and organizational factors are also considered. Successful candidates may be el\u2026",
+      "created": "2025-10-19T14:07:14Z",
+      "longitude": -122.286229,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Quest Diagnostics"
+      },
+      "latitude": 37.806984,
+      "contract_time": "full_time",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5417264406": {
+      "title": "Phlebotomist I",
+      "salary_max": 58344,
+      "salary_is_predicted": "0",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "customer-services-jobs",
+        "label": "Customer Services Jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_min": 48984,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NDE3MjY0NDA2In0.QiYMFY6o1UVmnrxhCCW2FJeKYNgWL4YYVZSIg_LkgPc",
+      "redirect_url": "https://www.adzuna.com/details/5417264406?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Philatelic, Alameda County",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Philatelic"
+        ]
+      },
+      "id": "5417264406",
+      "contract_time": "full_time",
+      "latitude": 37.806984,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Quest Diagnostics"
+      },
+      "created": "2025-09-27T06:34:24Z",
+      "longitude": -122.286229,
+      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist I - Oakland, CA - Monday-Friday 7:45AM-4:45PM (Rotational Weekends) Pay Range: $23.55 - $28.05 / hour Salary offers are based on a wide range of factors including relevant skills, training, experience, education, and, where applicable, certifications obtained. Market and organizational factors are also considered. Successful candidates may be eligible to re\u2026",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5413422495": {
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Alameda, Alameda County",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Alameda"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.com/details/5413422495?utm_medium=api&utm_source=4364e825",
+      "longitude": -122.282402,
+      "created": "2025-09-23T22:46:37Z",
+      "description": "Under the direction of the area supervisor, perform daily activities of the Patient Service Center /Mobile/In-office Phlebotomy accurately and on time. Maintain a safe and professional environment. Performs with confidence, both the forensic and clinical specimen collection and processing duties following established practices and procedures. Maintains required records and documentation. Demonstrates organizational commitment and promotes a positive image to patients, clients, employees and the\u2026",
+      "id": "5413422495",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Healthcare & Nursing Jobs",
+        "tag": "healthcare-nursing-jobs"
+      },
+      "salary_min": 33245.49,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NDEzNDIyNDk1In0.6iFNWSMSf2_I4CQRPfTGfbDmqav-_5P56bvOgwieDOI",
+      "company": {
+        "display_name": "SF Staffing Solutions",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "salary_max": 33245.49,
+      "salary_is_predicted": "1",
+      "latitude": 37.771217,
+      "title": "Phlebotomist I / Greeter",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5391201923": {
+      "title": "Lead Mobile Phlebotomist",
+      "salary_max": 45631.93,
+      "salary_is_predicted": "1",
+      "salary_min": 45631.93,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "healthcare-nursing-jobs",
+        "label": "Healthcare & Nursing Jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1MzkxMjAxOTIzIn0.yKh4IcHDL1CU4EQW1dYZJKZ0leK1XZ4WFitpekXaT8o",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Leandro"
+        ],
+        "display_name": "San Leandro, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.com/details/5391201923?utm_medium=api&utm_source=4364e825",
+      "id": "5391201923",
+      "latitude": 37.720538,
+      "contract_time": "full_time",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "TridentCare"
+      },
+      "created": "2025-09-09T16:52:43Z",
+      "longitude": -122.156804,
+      "description": "Pay based on experience, starting at $23.00 per hour. TASKS AND RESPONSIBILITIES: o Employee will drive their personal vehicle (unless other accommodations are made) to client facilities (mostly nursing homes) as directed by company dispatcher or assigned Area Phlebotomy Supervisor/ Area Lead. o Follows established phlebotomy procedures for obtaining blood samples from patients. o Properly and accurately identify patients according to phlebotomy patient identification policy prior to drawing. o\u2026",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5385747298": {
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "scientific-qa-jobs",
+        "label": "Scientific & QA Jobs"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_min": 50294,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTM4NTc0NzI5OCIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.-4pmCSzoQuZvwrzH5LUyf0ZyLVfuhqr8HjxlQZd85QM",
+      "redirect_url": "https://www.adzuna.com/details/5385747298?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "San Leandro"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "San Leandro, Alameda County"
+      },
+      "id": "5385747298",
+      "title": "Point of Care Lab Technician",
+      "salary_max": 62171,
+      "salary_is_predicted": "0",
+      "created": "2025-09-05T18:55:50Z",
+      "longitude": -122.156804,
+      "description": "Pay Range: $24.18-$29.89 FT/PT: Full Time Shifts Available: 5:00am-1:30pm and 2:00pm-10:30pm Licensure Requirement: Must possess an active MLT or LVN license. Job summary Under supervision of Laboratory Manager, performs waived laboratory tests in a remote or mobile setting. Also responsible for monitoring quality of reagents and working condition of instruments. Essential Functions: \u2022 Receives specimens from phlebotomists and couriers. \u2022 May operate a delivery van to bring the mobile lab to an\u2026",
+      "contract_time": "full_time",
+      "latitude": 37.720538,
+      "company": {
+        "display_name": "TridentCare",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5222518579": {
+      "salary_max": 67267.16,
+      "salary_is_predicted": "1",
+      "title": "Mobile Phlebotomist - PRN",
+      "id": "5222518579",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Oakland, Alameda County",
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Oakland"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.com/details/5222518579?utm_medium=api&utm_source=4364e825",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1MjIyNTE4NTc5In0.EyD-urT6vmRorVNPzh9gT90q8b6WDeJmKGSkvdL-SwM",
+      "salary_min": 67267.16,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Healthcare & Nursing Jobs",
+        "tag": "healthcare-nursing-jobs"
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Getlabs"
+      },
+      "latitude": 37.772927,
+      "contract_time": "part_time",
+      "description": "Getlabs is the leading platform for at-home diagnostics. Healthcare organizations use Getlabs to send mobile phlebotomists to patients\u2019 homes and collect labs, vitals, and advanced diagnostics. By leveraging Getlabs, partners can improve patient adherence and close gaps in care with same-day, nationwide availability. Our team has raised $50M from strategic investors including the two largest diagnostic laboratories in the United States, Labcorp and Quest. Getlabs\u2019 mission is to save lives by ex\u2026",
+      "longitude": -122.214332,
+      "created": "2025-05-29T16:08:19Z",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "5189265254": {
+      "contract_time": "part_time",
+      "latitude": 37.879319,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Labcorp"
+      },
+      "longitude": -122.265204,
+      "created": "2025-05-08T16:09:54Z",
+      "description": "At Labcorp we have a passion in helping people live happy and healthy lives. Every day we provide vital information that helps our clients and patients understand their health. If you are passionate about helping people and have a drive for service, then Labcorp could be a great next career step! We are currently seeking a Phlebotomist to work in either a Patient Service Center or Client office. In this role you will provide exceptional customer service, perform skilled specimen collections and\u2026",
+      "title": "Phlebotomist",
+      "salary_is_predicted": "1",
+      "salary_max": 48201.71,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Customer Services Jobs",
+        "tag": "customer-services-jobs"
+      },
+      "salary_min": 48201.71,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1MTg5MjY1MjU0In0.09KEfKiyGLDSmwbXr2mg4CMIQWTFEwfF0M5Jg93PbMU",
+      "redirect_url": "https://www.adzuna.com/details/5189265254?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Berkeley"
+        ],
+        "display_name": "Berkeley, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "id": "5189265254",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "4870703872": {
+      "id": "4870703872",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Oakland"
+        ],
+        "display_name": "Oakland, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.com/details/4870703872?utm_medium=api&utm_source=4364e825",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI0ODcwNzAzODcyIn0.tV5x2ZgqkOTxEkFISOY-w_XIwW46oCmmyV4aN7uwtO8",
+      "salary_min": 47754.41,
+      "category": {
+        "tag": "healthcare-nursing-jobs",
+        "label": "Healthcare & Nursing Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_is_predicted": "1",
+      "salary_max": 47754.41,
+      "title": "Mobile Phlebotomy Technician",
+      "description": "Are you a great lab tech or phlebotomist looking to advance your career? Would you like to get out of the lab and work on your own? Do you like your job but hate the pay? WE HAVE THE PERFECT POSITION FOR YOU! The National Phlebotomy Provider Network specializes in providing mobile medical and research specimen collection processing and delivery for home bound individuals, medical research groups, managed care organizations, medical laboratories, and biotech companies. This work is engaging and \u2026",
+      "created": "2024-09-20T09:40:07Z",
+      "longitude": -122.214332,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "The National Phlebotomy Provider Network"
+      },
+      "latitude": 37.772927,
+      "contract_time": "full_time",
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    },
+    "4814689469": {
+      "id": "4814689469",
+      "redirect_url": "https://www.adzuna.com/details/4814689469?utm_medium=api&utm_source=4364e825",
+      "location": {
+        "area": [
+          "US",
+          "California",
+          "Alameda County",
+          "Hayward"
+        ],
+        "display_name": "Hayward, Alameda County",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNDgxNDY4OTQ2OSIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.E9p9WrVITCYTXGEWxNpsyRqF6pXTitLMf9xEbv-sQMs",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Healthcare & Nursing Jobs",
+        "tag": "healthcare-nursing-jobs"
+      },
+      "salary_min": 71685.39,
+      "salary_max": 71685.39,
+      "salary_is_predicted": "1",
+      "title": "Mobile Phlebotomist - PRN",
+      "description": "Getlabs is the leading platform for at-home diagnostics. Healthcare organizations use Getlabs to send mobile phlebotomists to patients\u2019 homes and collect labs, vitals, and advanced diagnostics. By leveraging Getlabs, partners can improve patient adherence and close gaps in care with same-day, nationwide availability. Our team has raised $50M from strategic investors including the two largest diagnostic laboratories in the United States, Labcorp and Quest. Getlabs\u2019 mission is to save lives by ex\u2026",
+      "longitude": -122.100787,
+      "created": "2024-08-07T08:32:43Z",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Getlabs"
+      },
+      "contract_time": "part_time",
+      "latitude": 37.673724,
+      "_first_seen": "2026-01-18T16:32:31.343222"
+    }
   },
-  "last_checked": "2026-01-18T14:39:16.912178",
-  "jobs_found_last_run": 0
+  "last_checked": "2026-01-18T16:32:31.343257",
+  "jobs_found_last_run": 29
 }
