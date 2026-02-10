@@ -309,43 +309,8 @@
       "salary_min": 48984,
       "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTc5NzU3MDQ1In0.dwgr5D9kpEV4YAbCfxwJCXj0YDY-kfvN8i52Bl7hU2A",
       "_first_seen": "2026-01-18T16:32:31.343222"
-    },
-    "5579379267": {
-      "company": {
-        "display_name": "Quest Diagnostics",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "contract_time": "part_time",
-      "latitude": 37.778403,
-      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist I - Oakland, CA, Monday to Friday, 8:00 AM to 1:00 PM, with rotational weekends Pay range: $23.55 - $28.05 / hour Salary offers are based on a wide range of factors including relevant skills, training, experience, education, and, where applicable, certifications obtained. Market and organizational factors are also considered. Successful candidates may be el\u2026",
-      "created": "2026-01-11T10:24:13Z",
-      "longitude": -122.216989,
-      "salary_max": 58344,
-      "salary_is_predicted": "0",
-      "title": "Phlebotomist I",
-      "id": "5579379267",
-      "redirect_url": "https://www.adzuna.com/details/5579379267?utm_medium=api&utm_source=4364e825",
-      "location": {
-        "area": [
-          "US",
-          "California",
-          "Alameda County",
-          "Oakland"
-        ],
-        "display_name": "Oakland, Alameda County",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTc5Mzc5MjY3In0.ISEhFxT6kPZlRZtmgBoFXdaDF_UWk1Aa4SHf6AIepLA",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "customer-services-jobs",
-        "label": "Customer Services Jobs"
-      },
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "salary_min": 48984,
-      "_first_seen": "2026-01-18T16:32:31.343222"
     }
   },
-  "last_checked": "2026-02-09T17:15:06.713527",
+  "last_checked": "2026-02-10T15:02:14.940459",
   "jobs_found_last_run": 0
 }
