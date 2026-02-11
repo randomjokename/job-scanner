@@ -274,43 +274,8 @@
       "longitude": -122.156804,
       "created": "2026-01-13T05:35:48Z",
       "_first_seen": "2026-01-18T16:32:31.343222"
-    },
-    "5579757045": {
-      "company": {
-        "display_name": "Quest Diagnostics",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "contract_time": "full_time",
-      "latitude": 37.763607,
-      "longitude": -122.258202,
-      "created": "2026-01-11T15:29:15Z",
-      "description": "Description This position requires you to have a state phlebotomy license. (Quest does not accept NHA licenses in CA, WA, NV). Phlebotomist I - Alameda, CA, Monday to Friday, 7:30 AM to 4:30 PM, with rotational weekends Pay range: $23.55 - $28.05 / hour Salary offers are based on a wide range of factors including relevant skills, training, experience, education, and, where applicable, certifications obtained. Market and organizational factors are also considered. Successful candidates may be el\u2026",
-      "salary_max": 58344,
-      "salary_is_predicted": "0",
-      "title": "Phlebotomist I",
-      "redirect_url": "https://www.adzuna.com/details/5579757045?utm_medium=api&utm_source=4364e825",
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "display_name": "Alameda Pt, Alameda County",
-        "area": [
-          "US",
-          "California",
-          "Alameda County",
-          "Alameda Pt"
-        ]
-      },
-      "id": "5579757045",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "customer-services-jobs",
-        "label": "Customer Services Jobs"
-      },
-      "salary_min": 48984,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTc5NzU3MDQ1In0.dwgr5D9kpEV4YAbCfxwJCXj0YDY-kfvN8i52Bl7hU2A",
-      "_first_seen": "2026-01-18T16:32:31.343222"
     }
   },
-  "last_checked": "2026-02-10T15:02:14.940459",
+  "last_checked": "2026-02-11T14:57:26.484691",
   "jobs_found_last_run": 0
 }
