@@ -204,78 +204,8 @@
       "salary_max": 79342.45,
       "salary_is_predicted": "1",
       "_first_seen": "2026-01-18T16:32:31.343222"
-    },
-    "5582924568": {
-      "company": {
-        "display_name": "Lancesoft INC",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "salary_is_predicted": "0",
-      "salary_max": 60320,
-      "latitude": 37.719925,
-      "title": "Laboratory Technologist",
-      "redirect_url": "https://www.adzuna.com/details/5582924568?utm_medium=api&utm_source=4364e825",
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "display_name": "San Leandro, Alameda County",
-        "area": [
-          "US",
-          "California",
-          "Alameda County",
-          "San Leandro"
-        ]
-      },
-      "created": "2026-01-13T14:49:30Z",
-      "longitude": -122.168928,
-      "description": "Job Description Job Description Point of Care Lab Technician : Under supervision of Laboratory Manager, performs waived laboratory tests in a remote or mobile setting. Also responsible for monitoring quality of reagents and working condition of instruments. Essential Functions: Receives specimens from phlebotomists and couriers. May operate a delivery van to bring the mobile lab to an area of high volume of STAT testing when applicable. Enters patient demographics and test orders into lab infor\u2026",
-      "id": "5582924568",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "Engineering Jobs",
-        "tag": "engineering-jobs"
-      },
-      "salary_min": 49920,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTgyOTI0NTY4In0.2oibfLBxJDYXxsGsptFiYoY87RLTq0YUdx-7MBwledY",
-      "_first_seen": "2026-01-18T16:32:31.343222"
-    },
-    "5582084909": {
-      "salary_max": 62171,
-      "salary_is_predicted": "0",
-      "contract_type": "permanent",
-      "title": "Travel Medical Laboratory Technician (MLT) - $24 to $30 per hour in San Leandro, CA",
-      "id": "5582084909",
-      "location": {
-        "area": [
-          "US",
-          "California",
-          "Alameda County",
-          "San Leandro"
-        ],
-        "display_name": "San Leandro, Alameda County",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "redirect_url": "https://www.adzuna.com/details/5582084909?utm_medium=api&utm_source=4364e825",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoidE9QWVZzNzA4Qkd3dHE4djFpaXM4dyIsImkiOiI1NTgyMDg0OTA5In0.PE0YVlEgzxmz7Tu9wfc4ydoR4iODQ_O4jLzGgw7lB5w",
-      "category": {
-        "label": "Healthcare & Nursing Jobs",
-        "tag": "healthcare-nursing-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "salary_min": 50294,
-      "company": {
-        "display_name": "Acruex Health",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "contract_time": "full_time",
-      "latitude": 37.720538,
-      "description": "Medical Laboratory Technician Location: San Leandro, CA Agency: Acruex Health Pay: $24 to $30 per hour Shift Information: Evenings - 5 days x 8 hours Start Date: ASAP About the Position  Permanent (Full Time)  Pay Rate: $24.18 - $29.89/Hourly. Summary: Under supervision of Laboratory Manager, performs waived laboratory tests in a remote or mobile setting. Also responsible for monitoring quality of reagents and working condition of instruments. Responsibilities: Receives specimens from phlebotom\u2026",
-      "longitude": -122.156804,
-      "created": "2026-01-13T05:35:48Z",
-      "_first_seen": "2026-01-18T16:32:31.343222"
     }
   },
-  "last_checked": "2026-02-11T14:57:26.484691",
+  "last_checked": "2026-02-12T14:51:39.145758",
   "jobs_found_last_run": 0
 }
