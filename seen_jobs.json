@@ -135,77 +135,8 @@
       },
       "redirect_url": "https://www.adzuna.com/details/5584904102?utm_medium=api&utm_source=4364e825",
       "_first_seen": "2026-01-18T16:32:31.343222"
-    },
-    "5583492870": {
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4MzQ5Mjg3MCIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.oQ3LSuYOzodv3LysMI0YLBXxwV6f4ikiGtjdWJ-Ikic",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "category": {
-        "tag": "scientific-qa-jobs",
-        "label": "Scientific & QA Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "salary_min": 65038.71,
-      "id": "5583492870",
-      "redirect_url": "https://www.adzuna.com/details/5583492870?utm_medium=api&utm_source=4364e825",
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "display_name": "San Leandro, Alameda County",
-        "area": [
-          "US",
-          "California",
-          "Alameda County",
-          "San Leandro"
-        ]
-      },
-      "title": "Laboratory (Varied) Technologist",
-      "salary_is_predicted": "1",
-      "salary_max": 65038.71,
-      "description": "Position Title: Point of Care Lab Technician Shift Evenings- 2 PM - 10.30 PM Under the supervision of the Laboratory Manager, the Point of Care Lab Technician conducts waived laboratory tests in a remote or mobile environment. This role also entails the responsibility of monitoring the quality of reagents and ensuring the optimal functioning of instruments. Essential Functions: - Receives specimens from phlebotomists and couriers. - May operate a delivery van to transport the mobile laboratory \u2026",
-      "longitude": -122.168928,
-      "created": "2026-01-13T22:54:10Z",
-      "contract_time": "full_time",
-      "latitude": 37.719925,
-      "company": {
-        "display_name": "Rinvio Recruitment",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "_first_seen": "2026-01-18T16:32:31.343222"
-    },
-    "5583031259": {
-      "salary_min": 79342.45,
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "scientific-qa-jobs",
-        "label": "Scientific & QA Jobs"
-      },
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4MzAzMTI1OSIsInMiOiJ0T1BZVnM3MDhCR3d0cTh2MWlpczh3In0.m5WtT6NcZ_z_9jLV-eMickOy3h7odATi8xC-7mNaeZ8",
-      "longitude": -122.156804,
-      "created": "2026-01-13T16:23:00Z",
-      "location": {
-        "area": [
-          "US",
-          "California",
-          "Alameda County",
-          "San Leandro"
-        ],
-        "display_name": "San Leandro, Alameda County",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "redirect_url": "https://www.adzuna.com/details/5583031259?utm_medium=api&utm_source=4364e825",
-      "id": "5583031259",
-      "description": "WILL HAVE TO DRIVE TO 10948 Bigge St San Leandro CA 94577 TO PICK UP AND RETURN VAN EVERY SHIFT Serves over 7,500 care facilities nationwide. Great company to work for. Great working environment and developmental training! Feel accomplished at the end of the day. Great opportunities to promote yourself within and fine tune your skills. Great benefits, coworkers are very helpful. Autonomy, variety of patients, always on the move, great benefits, job security, and a great team to work with that s\u2026",
-      "title": "Perm - Technologist - Laboratory (Evenings) San Leandro CA",
-      "latitude": 37.720538,
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Bestica"
-      },
-      "salary_max": 79342.45,
-      "salary_is_predicted": "1",
-      "_first_seen": "2026-01-18T16:32:31.343222"
     }
   },
-  "last_checked": "2026-02-12T14:51:39.145758",
+  "last_checked": "2026-02-13T14:43:17.942266",
   "jobs_found_last_run": 0
 }
